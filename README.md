@@ -20,23 +20,26 @@ from customjson import json
 # Load data from a file or initialize a dictionary
 dict_data = json('test.json')
 
+# Obtain a dynamic string representation
+str_representation = str(dict_data)  # "{'number': 1}"
+
 # Access and modify values using attribute-like syntax
-dict_data.value = 2
+dict_data.value = 2  # {'number': 1, 'value': 2}
 
 # Remove elements using subtraction operator
-dict_data -= "value"
+dict_data -= "value"  # {'number': 1}
 
 # Delete a specific attribute
-del dict_data.number
+del dict_data.number  # {}
 
 # Accessing a non-existent attribute returns None
-value_x = dict_data.x
+value_x = dict_data.x  # None
 
 # Perform bulk operations with a list
-dict_data += [str(i) for i in range(5)]
+dict_data += [str(i) for i in range(5)]  # {'0': None, '1': None, '2': None, '3': None, '4': None}
 
 # Remove multiple elements in one go
-dict_data -= [str(i) for i in range(5)]
+dict_data -= [str(i) for i in range(5)]  # {}
 ```
 
 ## Installation
