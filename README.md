@@ -1,7 +1,3 @@
-Certainly! Below is a simplified version of the description suitable for a GitHub README:
-
----
-
 # CustomJSON
 
 CustomJSON is a Python library designed to enhance the manipulation of JSON-like data structures. It provides an intuitive interface for working with dictionaries, offering convenient features to streamline common operations.
